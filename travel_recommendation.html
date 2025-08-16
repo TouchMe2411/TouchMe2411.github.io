@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelBloom - Explore the World</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.7);
+      padding: 10px 20px;
+    }
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .search-bar {
+      display: flex;
+      gap: 5px;
+    }
+    .container {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .container h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .container p {
+      font-size: 1.2em;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .book-btn {
+      background: #ff9800;
+      color: #fff;
+      font-size: 1.2em;
+    }
+    .social-icons {
+      margin-top: 30px;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.5em;
+      margin: 0 10px;
+    }
+    #results {
+      margin: 30px auto;
+      max-width: 900px;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .card {
+      margin: 15px 0;
+      background: #222;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: left;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">TravelBloom</div>
+    <ul>
+  <li><a href="travel_recommendation.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search destinations...">
+      <button onclick="search()">Search</button>
+      <button onclick="clearResults()">Clear</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Explore New Destinations</h1>
+    <p>Discover the world’s most exciting places and enrich your cultural experiences.</p>
+    <button class="book-btn">Book Now</button>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
